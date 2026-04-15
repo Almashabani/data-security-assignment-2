@@ -1,4 +1,8 @@
 import random
+def generate_color_mapping(text):
+    pass
+
+
 from PIL import Image
 #instalojme paketen 'pillow'
 import json
