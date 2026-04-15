@@ -1,3 +1,4 @@
+import random
 from PIL import Image
 #instalojme paketen 'pillow'
 import json
