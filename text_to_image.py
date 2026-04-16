@@ -2,6 +2,10 @@ import random
 def generate_color_mapping(text):
     pass
 
+    from PIL import Image
+    import json
+    from mapping_utils import generate_color_mapping
+
 
 from PIL import Image
 #instalojme paketen 'pillow'
