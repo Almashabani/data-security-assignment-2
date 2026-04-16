@@ -4,6 +4,10 @@ def generate_color_mapping(text):
     mapping = {}
     used_colors = set()
 
+    for ch in unique_chars:
+    pass
+
+
     from PIL import Image
     import json
     from mapping_utils import generate_color_mapping
