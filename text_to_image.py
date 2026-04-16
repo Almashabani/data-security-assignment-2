@@ -1,6 +1,8 @@
 import random
 def generate_color_mapping(text):
-    pass
+    unique_chars = sorted(set(text))
+    mapping = {}
+    used_colors = set()
 
     from PIL import Image
     import json
