@@ -5,7 +5,16 @@ def generate_color_mapping(text):
     used_colors = set()
 
     for ch in unique_chars:
-    pass
+        while True:
+         color = (
+        random.randint(0, 255),
+        random.randint(0, 255),
+        random.randint(0, 255)
+    )
+    if color not in used_colors:
+        used_colors.add(color)
+        mapping[ch] = color
+        break
 
 
     from PIL import Image
