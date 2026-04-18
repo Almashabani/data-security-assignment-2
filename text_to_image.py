@@ -72,3 +72,14 @@ def decrypt_image_to_text(input_image, input_key):
                 break
 
             color = pixels[x, y]
+
+            if color in color_to_char:
+                decrypted_chars.append(color_to_char[color])
+            else:
+                decrypted_chars.append("?")
+
+            count += 1
+        if count >= text_length:
+            break
+
+    return "".join(decrypted_chars)
