@@ -53,6 +53,8 @@ def generate_color_mapping(text):
                 else:
                    pixels[x, y] = pad_color
 
+         img.save(output_image)
+
 
 
 
