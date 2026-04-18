@@ -43,6 +43,16 @@ def generate_color_mapping(text):
            "mapping": {ch: list(color) for ch, color in char_to_color.items()}
        }
 
+       index = 0
+       for y in range(image_height):
+           for x in range(image_width):
+               if index < len(text):
+                   ch = text[index]
+                   pixels[x, y] = char_to_color[ch]
+                   index += 1
+                else:
+                   pixels[x, y] = pad_color
+
 
 
 
