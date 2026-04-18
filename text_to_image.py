@@ -24,9 +24,9 @@ def generate_color_mapping(text):
 
 
 
-    def encrypt_text_to_image(text, image_width, image_height, output_image, output_key, pad_color=(0, 0, 0));
+def encrypt_text_to_image(text, image_width, image_height, output_image, output_key, pad_color=(0, 0, 0)):
        
-       total_pixels = image_width * image height
+       total_pixels = image_width * image_height
        if len(text) > total_pixels:
           raise ValueError("Teksti eshte me i gjate se kapaciteti i fotos.")
        
@@ -50,12 +50,12 @@ def generate_color_mapping(text):
                    ch = text[index]
                    pixels[x, y] = char_to_color[ch]
                    index += 1
-                else:
+               else:
                    pixels[x, y] = pad_color
 
-         img.save(output_image)
+img.save(output_image)
          
-         with open(output_key, "w", encoding="utf-8") as f:
+with open(output_key, "w", encoding="utf-8") as f:
                 json.dump(key_data, f, ensure_ascii=False, indent=4)
 
 
