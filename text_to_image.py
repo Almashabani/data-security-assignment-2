@@ -119,3 +119,4 @@ if __name__ == "__main__":
         output_key="key.json",
         pad_color=(255, 255, 255)
     )
+    decrypted_text = decrypt_image_to_text("encrypted_image.png", "key.json")
