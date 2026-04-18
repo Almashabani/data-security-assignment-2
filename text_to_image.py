@@ -32,7 +32,8 @@ def generate_color_mapping(text):
        
        char_to_color=generate_color_mapping(text)
        
-
+       img = Image.new("RGB", (image_width, image_height), pad_color)
+       pixels = img.load()
 
 
 
