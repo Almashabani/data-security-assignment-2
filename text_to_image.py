@@ -120,3 +120,6 @@ if __name__ == "__main__":
         pad_color=(255, 255, 255)
     )
     decrypted_text = decrypt_image_to_text("encrypted_image.png", "key.json")
+
+    print("Teksti i dekriptuar:")
+    print(decrypted_text)
