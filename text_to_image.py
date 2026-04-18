@@ -57,3 +57,6 @@ def decrypt_image_to_text(input_image, input_key):
     img = Image.open(input_image).convert("RGB")
     pixels = img.load()
     width, height = img.size
+
+    decrypted_chars = []
+    count = 0
