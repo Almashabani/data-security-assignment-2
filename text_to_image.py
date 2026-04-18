@@ -1,4 +1,8 @@
 import random
+from PIL import Image
+#instalojme paketen 'pillow'
+import json
+
 def generate_color_mapping(text):
     unique_chars = sorted(set(text))
     mapping = {}
@@ -19,14 +23,7 @@ def generate_color_mapping(text):
     return mapping
 
 
-    from PIL import Image
-    import json
-    from mapping_utils import generate_color_mapping
 
-
-from PIL import Image
-#instalojme paketen 'pillow'
-import json
 
 
 
@@ -59,3 +56,10 @@ def decrypt_image_to_text(input_image, input_key):
 
     decrypted_chars = []
     count = 0
+
+    for y in range(height):
+        for x in range(width):
+            if count >= text_length:
+                break
+
+            color = pixels[x, y]
