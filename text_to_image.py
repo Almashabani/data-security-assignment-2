@@ -53,19 +53,10 @@ def encrypt_text_to_image(text, image_width, image_height, output_image, output_
                else:
                    pixels[x, y] = pad_color
 
-img.save(output_image)
+       img.save(output_image)
          
-with open(output_key, "w", encoding="utf-8") as f:
+       with open(output_key, "w", encoding="utf-8") as f:
                 json.dump(key_data, f, ensure_ascii=False, indent=4)
-
-
-
-
-
-
-
-
-
 
 
 
