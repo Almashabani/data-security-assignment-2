@@ -54,6 +54,9 @@ def generate_color_mapping(text):
                    pixels[x, y] = pad_color
 
          img.save(output_image)
+         
+         with open(output_key, "w", encoding="utf-8") as f:
+                json.dump(key_data, f, ensure_ascii=False, indent=4)
 
 
 
