@@ -10,15 +10,15 @@ def generate_color_mapping(text):
 
     for ch in unique_chars:
         while True:
-         color = (
-        random.randint(0, 255),
-        random.randint(0, 255),
-        random.randint(0, 255)
-        )
-        if color not in used_colors:
-           used_colors.add(color)
-           mapping[ch] = color
-           break
+           color = (
+              random.randint(0, 255),
+              random.randint(0, 255),
+              random.randint(0, 255)
+            )
+           if color not in used_colors:
+              used_colors.add(color)
+              mapping[ch] = color
+              break
 
     return mapping
 
