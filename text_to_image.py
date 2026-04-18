@@ -35,6 +35,14 @@ def generate_color_mapping(text):
        img = Image.new("RGB", (image_width, image_height), pad_color)
        pixels = img.load()
 
+       key_data = {
+           "width": image_width,
+           "height": image_height,
+           "pad_color": list(pad_color),
+           "text_length": len(text),
+           "mapping": {ch: list(color) for ch, color in char_to_color.items()}
+       }
+
 
 
 
