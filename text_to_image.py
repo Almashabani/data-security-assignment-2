@@ -29,6 +29,8 @@ def generate_color_mapping(text):
        if len(text) > total_pixels:
           raise ValueError("Teksti eshte me i gjate se kapaciteti i fotos.")
        
+       char_to_color=generate_color_mapping(text)
+       
 
 
 from PIL import Image
