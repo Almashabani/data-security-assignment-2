@@ -24,6 +24,13 @@ def generate_color_mapping(text):
 
 
 
+    def encrypt_text_to_image(text, image_width, image_height, output_image, output_key, pad_color=(0, 0, 0));
+       
+       total_pixels = image_width * image height
+       if len(text) > total_pixels:
+          raise ValueError("Teksti eshte me i gjate se kapaciteti i fotos.")
+       
+
 
 
 
