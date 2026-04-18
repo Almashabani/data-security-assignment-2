@@ -83,3 +83,15 @@ def decrypt_image_to_text(input_image, input_key):
             break
 
     return "".join(decrypted_chars)
+
+if __name__ == "__main__":
+    text = "Pershendetje, ky eshte nje shembull i enkriptimit te tekstit ne foto."
+
+    encrypt_text_to_image(
+        text=text,
+        image_width=20,
+        image_height=10,
+        output_image="encrypted_image.png",
+        output_key="key.json",
+        pad_color=(255, 255, 255)
+    )
